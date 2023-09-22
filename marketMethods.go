@@ -48,7 +48,7 @@ func send(method string, endpoint string, params *url.Values) *http.Response {
 
 	qstr := querry.Encode()
 	ep := endpoint + qstr
-	req, err := http.NewRequest(method, ep, nil)
+	req,_ := http.NewRequest(method, ep, nil)
 	resp, err := httpClient.Do(req)
 	if err != nil {
 		log.Print(2, log.LogError, "connector send", fmt.Sprintf("ошибка http клиента  : %v", err))
