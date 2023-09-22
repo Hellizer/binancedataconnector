@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	log "git.itkn.ru/crypto/logger"
+	log "github.com/Hellizer/lightlogger"
 )
 
 const (
